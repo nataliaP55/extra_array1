@@ -10,6 +10,7 @@ const imagenesProductos = [
    "https://http2.mlstatic.com/D_NQ_NP_2X_619126-MLA50232132766_062022-F.webp",
    "https://http2.mlstatic.com/D_NQ_NP_2X_847906-MLA49763193559_042022-F.webp",
    "https://http2.mlstatic.com/D_NQ_NP_991401-MLA31351342525_072019-O.webp",
+
 ];
 
 
@@ -49,7 +50,7 @@ let textoProducto = "texto def";
 function agregarProducto() {
     productoNuevo = document.querySelector ('#nuevo_producto').value;
     textoProducto = document.querySelector ('#texto_producto').value;
-    document.querySelector(`#texto_nuevo`).innerHTML = `
+    document.querySelector(`#texto_nuevo`).innerHTML += `
     <h4> Producto ${textoProducto} </h4>  
     <img width="300px" src=${productoNuevo}>
     `;
